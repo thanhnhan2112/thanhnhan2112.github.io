@@ -104,109 +104,144 @@
                               </tr>
                       </table>
 
-                    </td> 
+                    </td>
                   <td width="24"></td> <!-- trắng -->
                     <td width="560" valign="top"><!-- InstanceBeginEditable name="content" -->
-        <form action="xl_lab4_bai2.php" method="post">         
-          <table width="100%" border="0">
-            <tr height="" >
-              <td colspan="2" align="center"><b><h3> ĐĂNG KÝ THÀNH VIÊN</b></h3 ></td>
-            </tr>
-            <tr>
-              <td>Tên đăng nhập</td>
-              <td ><input type="text" size="50" placeholder="Tên tài khoản"></td>
-            </tr>
-            <tr>
-              <td>Mật khẩu</td>
-              <td><input type="password" name="passwordbox" placeholder="Mật khẩu" size="50"></td>
-            </tr>
-            <tr>
-              <td colspan="2"></td>
-              <td></td>
-            </tr>
-            <tr >
-              <td colspan="2" ><b><h3> THÔNG TIN CÁ NHÂN </b></h3></td>
-            </tr>
-            <tr>
-              <td>Họ tên</td>
-              <td ><input type="text" size="45"></td>
-            </tr>
-            <tr>
-              <td>Ngày sinh</td>
-              <td><input type="date"></td>
-            </tr>
-            <tr>
-              <td>Giới tính</td>
-              <td>
-                <input type="radio" name="gt">Nam<br>
-                <input type="radio" name="gt">Nữ
-              </td>
-            </tr>
-            <tr>
-              <td>Địa chỉ email</td>
-              
-            </tr>
-            <tr>
-              <td>Hình đại diện</td>
-              <td><input type="file" name="‘nmURLAvatar’" id=""></td>
-            </tr>
-            <tr>
-              <td>Địa chỉ</td>
-              <td><input type="text" size="60"></td>
-            </tr>
-            <tr>
-              <td>Điện thoại</td>
-              <td><input type="text" size="60"></td>
-            </tr>
-            <tr>
-              <td>Câu hỏi bí mật</td>
-              <td>
-                <select name="nmQT" id="questions">
-                  <option value="qt">Bạn đã có người yêu chưa?</option>
-                  <option value="qt">Bạn thích gì nhất?</option>
-                  <option value="qt">Bạn có thích đi du lịch không?</option>
-                  <option value="qt">Bạn có thích tìm hiểu công nghệ không?</option>
-                  <option value="qt">Bạn có thích nuôi thú cưng không?</option>
-                  <option value="qt">Bạn thích màu gì?</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td>Trả lời</td>
-              <td><input type="text" size="60"></td>
-            </tr>
-            <tr>
-              <td>Bạn đang quan tâm đến nhóm sản phẩm nào ?</td>
-              <td>
-                <table width="100%">
-                  <tr>
-                    
-                    <td width="50%">
-                      <form action="index.html" autocomplete="on">
-                      <input  type="checkbox"a name="nmFields[]">Điện thoại<br>
-                      <input type="checkbox" name="nmFields[]">Tablet <br>
-                      <input type="checkbox" name="nmFields[]">Vi tính 
-                    </form>
-                    </td>
-                    <td>
-                      <input type="checkbox" name="nmFields[]">Máy ảnh - quay phim <br>
-                      <input type="checkbox" name="nmFields[]">Điện tử <br>
-                      <input type="checkbox" name="nmFields[]">Gia dụng 
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr align="center">
-              
-              <td colspan="3">
-                <a href="themsanpham.html">
-                <button name="button" type="button">Đăng ký</button></a>
-                <button name="reset" type="reset">Xóa</button>
-              </td>
-            </tr>
-          </table>
-        </form> 
+                <form action="xl_lab4_bai2.php" method="post">
+                  <table width="100%" border="0">
+                    <tr height="50%">
+                        <td align="center" colspan="2"><h2><b>THÊM SẢN PHẨM MỚI</b></h2></td>    
+                    </tr>
+                    <tr>
+                        <td>Mã sản phẩm</td>
+                        <td><input type="text" size="30" name="nmProID"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên sản phẩm</td>
+                        <td><input type="text" size="30" name="nmProName"></td>
+                    </tr>
+                    <tr>    
+                        <td>Hình ảnh</td>
+                        <td><input type="file" size="30" name="nmProImg"></td>
+                    </tr>
+                    <tr>
+                        <td>Loại sản phẩm</td>
+                        <td>
+                            <select name="nmCat" >
+                              <option value="Chọn sản phẩm">Chọn sản phẩm</option>
+                              <option value="Điện thoại">Điện thoại</option>  
+                              <option value="Máy tính bảng">Máy tính bảng</option>
+                              <option value="Laptop">Laptop</option>
+                              <option value="Bàn phím">Bàn phím</option>
+                              <option value="Tai nghe">Tai nghe</option>
+                              <option value="Chuột">Chuột</option>
+                              <option value="Sản phẩm khác">Sản phẩm khác</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hãng sản xuất</td>
+                        <td>
+                          <select name="nmMan" >
+                            <option value="Chọn hãng sản xuất">Chọn hãng sản xuất</option>
+                            <option value="Nokia">Nokia</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Oppo">Oppo</option>
+                            <option value="LG">LG</option>
+                            <option value="Acer">Acer</option>
+                            <option value="Asus">Asus</option>
+                            <option value="Hãng khác">Hãng khác</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước</td>
+                        <td>
+                            <table width="100%" height="10" border="0">
+                                <tr>
+                                    <td>W:<input type="number" size="5" min="0" max="1000" name="nmW">
+
+                                    </td>
+                                    <td>
+                                        H:<input type="number" size="5" min="0" max="1000" name="nmH">
+                                    </td>
+                                    <td >
+                                        D:<input type="number" size="5" min="0" max="1000" name="nmD"> mm
+                                    </td>
+                                </tr>
+                            </table>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>Trọng lượng</td>
+                        <td><input type="number" id="nmWeight" size="10" name="nmWeight" min="0" max="5000">g</td>
+                    </tr>
+                    <tr>
+                        <td>Giá</td>
+                        <td>
+                          <table width="100%">
+                            <tr>
+                              <td align="left"><input type="text" size="10" name="nmPrice"></td>
+                              <td>Màu: <input type="color" size="10" name="nmColor"></td>  
+                            </tr>
+                          </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hệ điều hành</td>
+                        <td>
+                          <select name="nmOS">
+                            <option value="Chọn hệ điều hành">Chọn hệ điều hành</option>
+                            <option value="Windowns">Windows</option>
+                            <option value="MacOS">MacOS</option>
+                            <option value="Android">Android</option>
+                            <option value="iOS">iOS</option>
+                            <option value="Linux">Linux</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chức năng</td>
+                        <td>
+                          <table width="100%">
+                            <tr>
+                              
+                              <td width="50%">
+                               
+                                <input type="checkbox" value="Nghe nhạc" name="nmFunctions []">Nghe nhạc<br>
+                                <input type="checkbox" value="Xem phim" name="nmFunctions []">Xem phim<br>
+                                <input type="checkbox" value="Quay phim" name="nmFunctions []">Quay phim
+                              
+                              </td>
+                              <td>
+                                <input type="checkbox" value="Bluetooth" name="nmFunctions []"> Bluetooth<br>
+                                <input type="checkbox" value="Wi-Fi" name="nmFunctions []">Wi-Fi<br>
+                                <input type="checkbox" value="3G" name="nmFunctions []">3G
+                              </td>   
+                              
+                            </tr>
+                          </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mô tả chi tiết</td>
+                        <td colspan="2" width="" align="left">
+                          <textarea cols="50" rows="10" wrap="OFF" name="nmDetail"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                      
+                        <td colspan="3" align="center">
+                          
+                          <input type="submit" value="Thêm">
+                          <input type="reset" value ="Xóa">
+                        </td>
+                      </form>
+                    </tr>
+                  </table>
+               </form>
 					<!-- InstanceEndEditable --><!-- center --></td>
                     <td width="24"></td> 
                     <!-- trắng -->
